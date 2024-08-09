@@ -52,5 +52,5 @@ const datas = data.reduce(function(obj, item){
     return obj;
 }, {});
 
-console.log(datas);
+// console.log(datas);
 
