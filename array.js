@@ -14,32 +14,32 @@ const inventors = [
         'Bevel, Ken ','Biden, Joseph', 'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine', 'Black Elk', 'Blair, Robert', 'Blair, Tony', 'Blake illiam'];
 
 const invent = inventors.filter(inventor=> (inventor.year >= 1500 && inventor.year < 1600))
-// console.table(invent);
+console.table(invent);
 
 const fullName = inventors.map(inventor =>(`${inventor.first} ${inventor.last}`));
-// console.log (fullName);
+console.log (fullName);
 
 const sortData = inventors.sort((a, b)=> a.year < b.year ? 1 : -1);
-// console.table(sortData);
+console.table(sortData);
 
 const totalYear = inventors.reduce((total, current)=>{
     return total + (current.passed - current.year)
 },0)
-// console.log(totalYear);
+console.log(totalYear);
 
 const oldest = inventors.sort(function(a,b) {
     const lastGuy = a.passed - a.year;
     const nextGuy = b.passed - b.year;
     return lastGuy > nextGuy ? - 1: 1;
 });
-// console.table(oldest);
+console.table(oldest);
 
 const alpha = people.sort((lastOne, nextOne) =>{
     const [aLast, aFirst] = lastOne.split(' ');
     const [bLast, bFirst] = nextOne.split(' ');
     return aLast > bLast ? 1: -1;
 })
-// console.log(alpha);
+console.log(alpha);
 
 
 const data = ['dfe','r5y','yug','kddfnv', 'dfe', 'r5y', 'dfe','fjnv'];
